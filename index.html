@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-Technologie Test 2</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    h2 {
+      margin-top: 25px;
+    }
+
+    figure {
+      margin-top: 15px;
+    }
+
+    figcaption {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body style="background-color: lightblue;">
+
+  <!-- Aufgabe 2 -->
+
+  <h1>VORNAME NACHNAME – KLASSE</h1>
+
+  <h2>Persönliche Daten</h2>
+
+  <p>
+    Geburtsdatum: TT.MM.JJJJ <br>
+    Lieblingsfarbe: Hellblau
+  </p>
+
+  <h2>Meine Lieblingsfächer</h2>
+
+  <ol>
+    <li>Informatik</li>
+    <li>Mathematik</li>
+    <li>Englisch</li>
+  </ol>
+
+  <h2>Meine Hobbys</h2>
+
+  <ul id="liste-hobbys">
+  </ul>
+
+  <h2>Freies Bild</h2>
+
+  <!-- Aufgabe 4 -->
+
+  <figure>
+    <img 
+      src="img/bild1.jpg"
+      alt="Berglandschaft mit See"
+      title="Freies Bild"
+      width="400"
+    >
+
+    <figcaption>
+      Urheber: 
+      <a href="https://commons.wikimedia.org/wiki/User:Martin_Falbisoner" target="_blank">
+        Martin Falbisoner
+      </a>
+      <br>
+
+      Titel:
+      <a href="https://commons.wikimedia.org/wiki/File:Schlegeis_Stausee.jpg" target="_blank">
+        Schlegeis Stausee
+      </a>
+      <br>
+
+      Lizenz:
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+        CC BY-SA 3.0
+      </a>
+    </figcaption>
+  </figure>
+
+  <!-- Aufgabe 3 -->
+
+  <script>
+    const hobbys = ["Fußball", "Gaming", "Musik hören", "DEIN NAME"];
+
+    const liste = document.getElementById("liste-hobbys");
+
+    hobbys.forEach(h => {
+      let li = document.createElement("li");
+      li.textContent = h;
+      liste.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
